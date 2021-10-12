@@ -27,7 +27,7 @@ import basics.repetitions.for_loop.simple as simple_for
 import basics.repetitions.for_loop.count_down as count_down
 import basics.repetitions.for_loop.range as range_file
 import basics.repetitions.for_loop.characters as characters
-import basics.repetitions.for_loop.reverse
+import basics.repetitions.for_loop.reverse as reverse
 import basics.repetitions.for_loop.membership_operators as membership_operators
 import basics.repetitions.nested_loop.nested as nested_loop
 import basics.repetitions.nested_loop.nesting as nesting
@@ -49,6 +49,92 @@ def run_block_a():
         simple_message.run()
     elif response == "multiline_message":
         multiline_message.run()
+    elif response == "escape_characters":
+        escape_characters.run()
+    elif response == "ascii_art":
+        ascii_art.run()
+    elif response == "user_input":
+        user_input.run()
+    elif response == "ascii_robot":
+        ascii_robot.run()
+    elif response == "data_types":
+        data_types.run()
+    elif response == "string_operators":
+        string_operators.run()
+    elif response == "if_":
+        if_.run()
+    elif response == "if_else":
+        if_else.run()
+    elif response == "if_elif_else":
+        if_elif_else.run()
+    elif response == "modulo_operator":
+        modulo_operator.run()
+    elif response == "comparison_operators":
+        comparison_operators.run()
+    elif response == "counter":
+        counter.run()
+    elif response == "nested":
+        nested.run()
+    elif response == "nestception":
+        nestception.run()
+    elif response == "or_operator":
+        or_operator.run()
+    elif response == "and_operator":
+        and_operator.run()
+    elif response == "simple_while":
+        simple_while.run()
+    elif response == "count":
+        count.run()
+    elif response == "ascii":
+        ascii.run()
+    elif response == "length":
+        length.run()
+    elif response == "sum_100":
+        sum_100.run()
+    elif response == "sum_user_numbers":
+        sum_user_numbers.run()
+    elif response == "factorial":
+        factorial.run()
+    elif response == "simple_for":
+        simple_for.run()
+    elif response == "count_down":
+        count_down.run()
+    elif response == "range_file":
+        range_file.run()
+    elif response == "characters":
+        characters.run()
+    elif response == "reverse":
+        reverse.run()
+    elif response == "membership_operators":
+        membership_operators.run()
+    elif response == "nested_loop":
+        nested_loop.run()
+    elif response == "nesting":
+        nesting.run()
+    elif response == "ascii_code":
+        ascii_code.run()
+    elif response == "ascii_char":
+        ascii_char.run()
+    elif response == "simple_function":
+        simple_function.run()
+    elif response == "function_nest":
+        function_nest.run()
+    elif response == "function_para":
+        function_para.run()
+    elif response == "function_loop":
+        function_loop.run()
+    elif response == "function_paras":
+        function_paras.run()
+    elif response == "multiple_functions":
+        mulitple_functions.run()
+    elif response == "return_values":
+        return_values.run()
+    elif response == "function_calls":
+        function_calls.run()
+    elif response == "guess_the_number":
+        guess_the_number.run()
+    else:
+        print("Error: File name not recognised")
 
 
 def run():
