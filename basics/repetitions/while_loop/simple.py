@@ -1,5 +1,6 @@
-cables = int(input("How many cables should I remove? "))
+def run():
+    cables = int(input("How many cables should I remove? "))
 
-while cables != 0:
-    print("Removed cable!")
-    cables = cables - 1
+    while cables != 0:
+        print("Removed cable!")
+        cables = cables - 1
