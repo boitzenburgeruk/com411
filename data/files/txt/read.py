@@ -26,4 +26,5 @@ def run():
     display_text(path)
 
 
-run()
+if __name__ == "__main__":
+    run()
