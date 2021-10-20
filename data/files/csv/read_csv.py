@@ -3,7 +3,7 @@ import csv
 
 def read(path):
     print("Headings:")
-    with open("bots.csv") as file:
+    with open(path) as file:
         reader = csv.reader(file)
         headings = next(reader)
         print(headings)
