@@ -61,13 +61,43 @@ def display_passengers_per_age_group():
     print(f"Children: {children}, Adults: {adults}, Elderly: {elderly}")
 
 
+def display_survivors_per_age_group():
+    children = 0
+    adults = 0
+    elderly = 0
+    child_num_survived = 0
+    ad_num_survived= 0
+    eld_num_survived = 0
+    for record in records:
+        # solution copied from SOL
+        if record[5] != "":
+            age = float(record[5])
+            if age < 18:
+                children += 1
+                survival_status = int(record[1])
+                if survival_status == 1:
+                    child_num_survived += 1
+            elif age < 65:
+                adults += 1
+                survival_status = int(record[1])
+                if survival_status == 1:
+                    ad_num_survived += 1
+            else:
+                elderly += 1
+                survival_status = int(record[1])
+                if survival_status == 1:
+                    eld_num_survived += 1
+    print(f"Children: {child_num_survived}/{children}, Adults: {ad_num_survived}/{adults}, Elderly: {eld_num_survived}/{elderly}")
+
+
 def display_menu():
     print("""
 Please select of the following options:
 [1] Display the names of all passengers
 [2] Display the number of passengers that survived
 [3] Display the number of passengers per gender
-[4] Display the number of passengers per age group""")
+[4] Display the number of passengers per age group
+[5] Display the number of survivors per age group""")
     choice = int(input())
     return choice
 
@@ -85,6 +115,8 @@ def run():
         display_passengers_per_gender()
     elif selected_option == 4:
         display_passengers_per_age_group()
+    elif selected_option == 5:
+        display_survivors_per_age_group()
     else:
         print("Error! Option not recognised!")
 
