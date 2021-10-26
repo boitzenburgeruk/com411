@@ -16,6 +16,13 @@ def load_data(file_path):
     print("Done!")
 
 
+def display_passenger_names():
+    print("The names of the passengers are...")
+    for record in records:
+        passenger_name = record[3]
+        print(passenger_name)
+
+
 def display_menu():
     print("""
 Please select of the following options:
@@ -32,6 +39,10 @@ def run():
     print(f"Successfully loaded {len(records)} records")
     selected_option = display_menu()
     print(f"You have selected option: {selected_option}")
+    if selected_option == 1:
+        display_passenger_names()
+    else:
+        print("Error! Option not recognised!")
 
 
 if __name__ == "__main__":
